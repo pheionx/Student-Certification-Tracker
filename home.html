@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Technology</title>
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        <!-- Font Awesome CDN for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <llink href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+           <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+
+
+
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo with Transparent Box -->
+            <div class="logo">
+                <img src="image/logotwo.png" alt="Second Logo">
+                    </div>
+        
+            
+
+            <!-- Navigation Bar -->
+            <nav>
+                <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="instructionguide.html">Instruction Guide</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <!-- Your other content here (if any) -->
+        <h1>Student Certification Tracker</h1>
+
+        <!-- Form Box for Name and ID Input -->
+        <div class="form-box">
+            <form action="results.html" method="GET" class="certification-form" autocomplete="off">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required pattern="[A-Za-z\s]+"
+                       title="Please enter letters only"
+                       oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')" autocomplete="off">
+                
+                <label for="id">ID:</label>
+                <input type="text" id="id" name="id" required pattern="\d+"
+                       title="Please enter numbers only"
+                       oninput="this.value = this.value.replace(/\D/g, '')" autocomplete="off">
+                
+                <button type="submit">Track Certifications</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="image/logoone.jpg" alt="Phoenix Technology Logo">
+                <p>Powered by Phoenix Technology</p>
+                <small>© 2024 Phoenix Technology. All rights reserved.</small>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <div class="contact-details">
+                    
+                    <p><i class="fas fa-envelope"></i> info@phoenixtechnology.com</p>
+                    
+                    <p><i class="fas fa-phone"></i><strong> (410) 555-0199</p>
+
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Innovation Drive, Suite 456, Baltimore, MD 21201</p>
+                </div>
+            
+            </div>
+    
+            <!-- Tagline and Social Icons Section -->
+            <div class="social-section">
+                <div class="tagline-section">
+                    <p>"Easily Track Your Certifications"</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+    
+    
+    
+    
+
+    <!-- Script for form handling and redirection -->
+    <script>
+        const certificationData = {
+            "Rufael Solomon,233323": {
+                "attempted": ["Project Management Professional (PMP)"],
+                "completed": ["Project Management Professional (PMP)"],
+                "dateCompleted": ["2024-04-20"]
+            },
+            "Jenehra Allen,345454": {
+                "attempted": ["ACDIS CDI Apprenticeship"],
+                "completed": ["ACDIS CDI Apprenticeship"],
+                "dateCompleted": ["2024-04-25"]
+            },
+            "Oluwaseyi Odeyemi,167453": {
+                "attempted": ["CompTIA Security+"],
+                "completed": ["CompTIA Security+"],
+                "dateCompleted": ["2024-05-05"]
+            },
+            "Clauvert Chingkala,867453": {
+                "attempted": ["Certified Information Security Manager (CISM)"],
+                "completed": ["Certified Information Security Manager (CISM)"],
+                "dateCompleted": ["2024-05-15"]
+            },
+            "Rilwan Ajibola,485845": {
+                "attempted": ["Certified Information Systems Security Professional (CISSP)"],
+                "completed": ["Certified Information Systems Security Professional (CISSP)"],
+                "dateCompleted": ["2024-06-01"]
+            },
+            "Marlon Taylor,903432": {
+                "attempted": ["AWS Certified Solutions Architect"],
+                "completed": ["AWS Certified Solutions Architect"],
+                "dateCompleted": ["2024-06-10"]
+            }
+        };
+    
+        function handleFormSubmission(event) {
+            event.preventDefault();
+            const name = document.getElementById("name").value.trim();
+            const id = document.getElementById("id").value.trim();
+            const key = `${name},${id}`;
+            
+            if (certificationData[key]) {
+                const data = certificationData[key];
+                const queryString = `?name=${encodeURIComponent(name)}&id=${encodeURIComponent(id)}&attempted=${encodeURIComponent(data.attempted)}&completed=${encodeURIComponent(data.completed)}&dateCompleted=${encodeURIComponent(data.dateCompleted)}`;
+                window.location.href = "results.html" + queryString;
+            } else {
+                alert("No certification data found for the entered Name and ID.");
+            }
+        }
+    
+        document.querySelector(".certification-form").addEventListener("submit", handleFormSubmission);
+    </script>
+
+</body>
+</html>
