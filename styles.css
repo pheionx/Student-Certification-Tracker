@@ -22,8 +22,7 @@ body {
     margin: 0 auto;
 }
 
-/* Header Styles */
-/* Header Styles */
+
 /* Header Styles */
 header {
     background-color: #000; /* Set header background to black */
@@ -75,11 +74,6 @@ header nav ul li a {
     transition: background-color 0.3s ease;
 }
 
-
-
-
-/* Main Section */
-/* Main Section */
 /* Main Section */
 main {
     background-color: #000; /* Set main content background to black */
@@ -97,16 +91,6 @@ main h1 {
     padding-top: 0; /* Ensure no additional space above the h1 */
 }
 
-
-
-/* General Footer Styles */
-/* General Footer Styles */
-/* General Footer Styles */
-/* General Footer Styles */
-/* General Footer Styles */
-/* General Footer Styles */
-/* General Footer Styles */
-/* General Footer Styles */
 /* General Footer Styles */
 footer {
     background-color: #f99a4b; /* Orange background */
@@ -184,11 +168,6 @@ footer {
     letter-spacing: 1px; /* Adds slight space between characters */
     text-transform: uppercase; /* Makes the text uppercase */
     font-family: Dancing Script', cursive; /* Fancy font for tagline */
-}
-
-/* Optional: Add hover effect to tagline */
-.tagline-section:hover {
-    color: #f39c12; /* Changes text color on hover */
 }
 
 /* Responsive Design */
