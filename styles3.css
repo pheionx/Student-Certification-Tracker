@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Set body background to black */
+    color: white; /* White text for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full height */
+}
+
+/* Container for consistent padding and centering */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background-color: #000; /* Set header background to black */
+    color: white; /* White text */
+    padding: 20px 0; /* Adjust padding for header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 0; /* Remove margin at the bottom of the header */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(24, 24, 24, 0.3);
+    border-radius: 10px;
+    gap: 15px;
+    margin-right: auto; /* Adjust this value to push logo more left */
+}
+
+header .logo img {
+    height: 70px; /* Adjust logo size */
+    width: auto; /* Keeps aspect ratio */
+}
+
+/* Tagline Styling */
+
+
+/* Navigation Bar */
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Main Section */
+main {
+    background-color: #000; /* Set main content background to black */
+    padding: 0 0 120px; /* Increased bottom padding to push the footer further down */
+    margin-top: 0; /* Remove any margin at the top */
+    color: white;
+    text-align: center;
+    flex-grow: 1; /* Allow main content to grow and push the footer down */
+}
+    /* General Styling for About Us Page */
+/* General Styling for About Us Page */
+/* General Styling for About Us Page */
+/* For About Us Section Heading */
+/* General Styling for About Us Page */
+.about-us {
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding around the content */
+    max-width: 1000px; /* Set a maximum width for better alignment */
+    margin: 0 auto; /* Center the content */
+}
+
+/* Heading Styles */
+.about-us h2 {
+    font-size: 2.5rem; /* Larger font size for headings */
+    color: #f99a4b; /* Gold color for headings */
+    margin-bottom: 15px; /* Add space below each heading */
+    font-weight: 700; /* Make headings bold */
+    text-transform: capitalize; /* Capitalize headings */
+    letter-spacing: 1px; /* Space out letters slightly */
+}
+
+/* Paragraph Styles */
+.about-us p {
+    font-size: 1.1rem; /* Adjust font size for readability */
+    line-height: 1.8; /* Increase line height for better spacing */
+    margin-bottom: 20px; /* Space between paragraphs */
+    color: #e0e0e0; /* Light grey text for better contrast */
+}
+
+/* Styling for paragraphs under Our Accomplishments and Culture */
+.about-us .accomplishment,
+.about-us .culture {
+    margin-bottom: 15px;
+}
+
+.about-us .accomplishment strong,
+.about-us .culture strong {
+    color:  #f99a4b; /* Gold color for strong text */
+    font-weight: bold; /* Make text bold */
+}
+
+/* Emphasizing Key Info in Paragraphs */
+.about-us p strong {
+    color:  #f99a4b; /* Gold color for strong text */
+    font-weight: bold; /* Make text bold */
+}
+
+
+footer {
+    background-color: #f99a4b; /* Orange background */
+    color: white;
+    padding: 15px 30px; /* Reduced padding for a smaller footer */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+/* Footer Content Container */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.logo-section img {
+    max-height: 60px; 
+    margin-bottom: 5px;
+}
+
+.logo-section p {
+    font-size: 0.9rem;
+}
+
+.logo-section small {
+    font-size: 0.75rem;
+}
+
+.contact-section {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+
+/* Social Icons Section */
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align to the right */
+    gap: 5px;
+}
+
+.social-section a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.social-section a:hover {
+    color: #f39c12; /* Hover color */
+}
+
+/* Tagline Section */
+.tagline-section {
+    text-align: center;
+    margin-bottom: 15px; /* Adds space between tagline and social icons */
+    font-size: 0.6rem; /* Slightly larger text */
+    font-weight: 700; /* Bold text for emphasis */
+    color: #ffffff; /* White color for the text */
+    letter-spacing: 1px; /* Adds slight space between characters */
+    text-transform: uppercase; /* Makes the text uppercase */
+    font-family: Dancing Script', cursive; /* Fancy font for tagline */
+}
+
+/* Optional: Add hover effect to tagline */
+.tagline-section:hover {
+    color: #f39c12; /* Changes text color on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-section {
+        align-items: center;
+    }
+}
