@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix Technology</title>
+    <link rel="stylesheet" href="styles4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <!-- Logo with Transparent Box -->
+            <div class="logo">
+                <img src="image/logotwo.png" alt="Second Logo">
+                    </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="instructionguide.html">Instruction Guide</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <h1>Certification Summary</h1>
+            <div class="content">
+                <!-- The table content will be dynamically inserted here -->
+                <table class="certification-table">
+                    <thead>
+                        <tr>
+                            <th colspan="2">${data.name}</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Certification Attempted</td>
+                            <td>${data.attempted || 'N/A'}</td>
+                        </tr>
+                        <tr>
+                            <td>Certification Completed</td>
+                            <td>${data.completed || 'N/A'}</td>
+                        </tr>
+                        <tr>
+                            <td>Date Completed</td>
+                            <td>${data.dateCompleted || 'N/A'}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="goBack()" class="go-back-btn">Go Back</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <!-- Logo Section -->
+            <div class="logo-section">
+                <img src="image/logoone.jpg" alt="Phoenix Technology Logo">
+                <p>Powered by Phoenix Technology</p>
+                <small>© 2024 Phoenix Technology. All rights reserved.</small>
+            </div>
+    
+            <!-- Contact Us Section -->
+            <div class="contact-section">
+                <h3>Contact Us</h3>
+                <div class="contact-details">
+                    
+                    <p><i class="fas fa-envelope"></i> info@phoenixtechnology.com</p>
+                    
+                    <p><i class="fas fa-phone"></i><strong> (410) 555-0199</p>
+
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Innovation Drive, Suite 456, Baltimore, MD 21201</p>
+                </div>
+            
+            </div>
+    
+            <!-- Tagline and Social Icons Section -->
+            <div class="social-section">
+                <div class="tagline-section">
+                    <p>"Easily Track Your Certifications"</p>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            return {
+                name: params.get("name"),
+                id: params.get("id"),
+                attempted: params.get("attempted"),
+                completed: params.get("completed"),
+                dateCompleted: params.get("dateCompleted")
+            };
+        }
+
+        function displayCertificationData() {
+            const data = getQueryParams();
+            if (data.name && data.id) {
+                const contentDiv = document.querySelector(".content");
+                contentDiv.innerHTML = `
+                 
+                    <table class="certification-table">
+                        <thead>
+                            <tr>
+                                <th colspan="2">${data.name}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Certification Attempted</td>
+                                <td>${data.attempted || 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td>Certification Completed</td>
+                                <td>${data.completed || 'N/A'}</td>
+                            </tr>
+                            <tr>
+                                <td>Date Completed</td>
+                                <td>${data.dateCompleted || 'N/A'}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button onclick="goBack()" class="go-back-btn">Go Back</button>
+                `;
+            } else {
+                document.querySelector(".content").innerHTML = "<p>No data available for the entered credentials.</p>";
+            }
+        }
+
+        function goBack() {
+            window.location.href = 'home.html'; // Replace 'home.html' with the correct URL if needed
+        }
+
+        window.onload = displayCertificationData;
+    </script>
+</body>
+</html>

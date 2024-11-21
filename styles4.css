@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #000; /* Set body background to black */
+    color: white; /* White text for contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures body takes full height */
+}
+
+/* Container for consistent padding and centering */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+/* Header Styles */
+/* Header Styles */
+header {
+    background-color: #000; /* Set header background to black */
+    color: white; /* White text */
+    padding: 20px 0; /* Adjust padding for header */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 0; /* Remove margin at the bottom of the header */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex; /* Use flexbox to align logo and tagline */
+    align-items: center; /* Vertically align items */
+    padding: 10px;
+    background-color: rgba(24, 24, 24, 0.3); /* Semi-transparent background for logo */
+    border-radius: 10px;
+}
+
+header .logo img {
+    height: 70px; /* Adjust logo size */
+    width: auto;
+}
+
+/* Tagline Styling */
+.tagline {
+    font-size: 0.9rem; /* Smaller font size */
+    font-weight: 400; /* Set font weight (regular) */
+    color: #f3efec; /* Gold color */
+    font-style: italic; /* Italicize the text */
+    margin-left: 20px; /* Add space between logo and tagline */
+    text-align: left; /* Align text to the left */
+}
+
+/* Navigation Bar */
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.title {
+    margin-top: 50px; /* Pushes the name further down */
+    margin-bottom: 20px; /* Adds spacing between the name and the table */
+    font-size: 2rem; /* Adjust the font size as needed */
+    text-align: center; /* Optional: Center-align the name */
+    color: #f39c12; /* Optional: Add a gold color for styling */
+}
+
+
+/* Main Section */
+/* Main Section */
+/* Main Section */
+main {
+    background-color: #000; /* Set main content background to black */
+    padding: 0 0 120px; /* Increased bottom padding to push the footer further down */
+    margin-top: 0; /* Remove any margin at the top */
+    color: white;
+    text-align: center;
+    flex-grow: 1; /* Allow main content to grow and push the footer down */
+}
+
+
+/* Adjust H1 positioning */
+main h1 {
+    margin-top: 0; /* Remove margin above the h1 */
+    padding-top: 0; /* Ensure no additional space above the h1 */
+}
+
+
+.certification-table {
+    width: 60%;
+    max-width: 600px;
+    margin: 90px auto 60px auto;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #2c2b2b;
+}
+
+.certification-table th {
+    text-align: center;
+    background-color: #d28539; /* Orange - Top Row */
+    color: rgb(243, 234, 234);
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+/* Apply background color to the first (top) row */
+.certification-table tr:first-child {
+    background-color: #7e7e7d; /* Gold/Yellow for the top row */
+}
+
+/* Apply background color to the middle rows */
+.certification-table tbody tr:nth-child(even) {
+    background-color: #201f1f; /* Dark grey for even rows (middle rows) */
+}
+
+/* Apply background color to the last row */
+.certification-table tr:last-child {
+    background-color: #444444; /* Dark grey for the last row */
+}
+
+/* Table data styling */
+.certification-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #1b1a1a;
+}
+
+/* White line between rows */
+.certification-table tr {
+    border-bottom: 1px solid white;
+}
+
+.go-back-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #d28539;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.go-back-btn:hover {
+    background-color: #b06c2e;
+}
+
+
+/* Footer Styles */
+/* Footer Section */
+/* Footer Styling */
+/* Footer Styling */
+/* Footer Styling */
+/* Footer Styling */
+/* Footer Styling */
+/* Footer Styling */
+footer {
+    background-color: #f99a4b; /* Orange background */
+    color: white;
+    padding: 15px 30px; /* Reduced padding for a smaller footer */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+/* Footer Content Container */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* Logo Section */
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+.logo-section img {
+    max-height: 60px; 
+    margin-bottom: 5px;
+}
+
+.logo-section p {
+    font-size: 0.9rem;
+}
+
+.logo-section small {
+    font-size: 0.75rem;
+}
+
+.contact-section {
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+
+
+/* Social Icons Section */
+.social-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align to the right */
+    gap: 5px;
+}
+
+.social-section a {
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.social-section a:hover {
+    color: #f39c12; /* Hover color */
+}
+
+/* Tagline Section */
+.tagline-section {
+    text-align: center;
+    margin-bottom: 15px; /* Adds space between tagline and social icons */
+    font-size: 0.6rem; /* Slightly larger text */
+    font-weight: 700; /* Bold text for emphasis */
+    color: #ffffff; /* White color for the text */
+    letter-spacing: 1px; /* Adds slight space between characters */
+    text-transform: uppercase; /* Makes the text uppercase */
+    font-family: Dancing Script', cursive; /* Fancy font for tagline */
+}
+
+/* Optional: Add hover effect to tagline */
+.tagline-section:hover {
+    color: #f39c12; /* Changes text color on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-section {
+        align-items: center;
+    }
+}
