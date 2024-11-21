@@ -174,14 +174,6 @@ main h1 {
     background-color: #b06c2e;
 }
 
-
-/* Footer Styles */
-/* Footer Section */
-/* Footer Styling */
-/* Footer Styling */
-/* Footer Styling */
-/* Footer Styling */
-/* Footer Styling */
 /* Footer Styling */
 footer {
     background-color: #f99a4b; /* Orange background */
@@ -259,11 +251,6 @@ footer {
     letter-spacing: 1px; /* Adds slight space between characters */
     text-transform: uppercase; /* Makes the text uppercase */
     font-family: Dancing Script', cursive; /* Fancy font for tagline */
-}
-
-/* Optional: Add hover effect to tagline */
-.tagline-section:hover {
-    color: #f39c12; /* Changes text color on hover */
 }
 
 /* Responsive Design */
