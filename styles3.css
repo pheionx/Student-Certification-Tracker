@@ -212,10 +212,7 @@ footer {
     font-family: Dancing Script', cursive; /* Fancy font for tagline */
 }
 
-/* Optional: Add hover effect to tagline */
-.tagline-section:hover {
-    color: #f39c12; /* Changes text color on hover */
-}
+
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
