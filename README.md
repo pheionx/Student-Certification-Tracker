@@ -37,3 +37,15 @@ At Pheionx Technologies, we nurture a collaborative, inclusive, and innovative c
 - **Diversity and Inclusion**: Leveraging diverse perspectives to drive innovation.
 - **Sustainability and Responsibility**: Building systems that benefit institutions, students, and communities.
 
+## Our Team
+
+Our dedicated team includes software developers, project managers, analysts, designers, and IT specialists. Guided by agile methodologies, we ensure high-quality results through continuous improvement and collaboration.
+
+## Thank You for Choosing Pheionx Technologies
+
+We are passionate about empowering educational institutions and students with the tools they need to thrive in today’s dynamic world.  
+**Thank you for choosing Pheionx Technologies – Where Innovation Meets Excellence.**
+
+---
+
+
