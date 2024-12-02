@@ -21,3 +21,22 @@ Since our inception, Pheionx Technologies has achieved remarkable milestones:
 - **Montgomery Community College**: Designed a custom certification portal for students to register, manage, and track their certifications.
 
 ## Our Partners
+Pheionx Technologies collaborates with key educational organizations to align our solutions with their unique needs. Our partners include:
+- **Maryland Educational Systems**
+- **The State of Maryland’s Department of Education**
+- **Community Colleges of Maryland**
+- **University of Maryland System**
+- **Certification Boards** offering student-focused credentials and workforce certifications.
+
+## Our Culture
+
+At Pheionx Technologies, we nurture a collaborative, inclusive, and innovative culture based on these core values:
+- **Integrity and Trust**: Transparency and accountability in all our endeavors.
+- **Innovation and Learning**: Creative thinking and continuous improvement.
+- **Client-Centered Approach**: Tailored solutions for each institution’s unique needs.
+- **Diversity and Inclusion**: Leveraging diverse perspectives to drive innovation.
+- **Sustainability and Responsibility**: Building systems that benefit institutions, students, and communities.
+
+## Our Team
+
+Our dedicated team includes software developers, project managers, analysts, designers, and IT specialists. Guided by agile methodologies, we ensure high-quality results through contin
